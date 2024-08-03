@@ -10,4 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run a shell script
-        run: echo hello world
+        env:
+          GIT_USER_NAME: Mario Carlos Chita
+        run: "$GIT_USER_NAME"
