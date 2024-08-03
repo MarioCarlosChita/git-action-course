@@ -1,4 +1,4 @@
-name: deployyment
+name: deployment
 on: 
   push:
     branches: [ main ]
@@ -9,5 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Run a shell script
-        run: echo hello world
+      - name:  Check repository 
+        uses: actions/checkout@v4
+      - name: Run a shell script 
+        env:
+          GIT_USER_OWNER: ${{env.GIT_USER_OWNER}}
+        run: echo "$GIT_USER_NAME"
