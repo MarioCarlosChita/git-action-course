@@ -14,4 +14,4 @@ jobs:
       - name: Run a shell script 
         env:
           GIT_USER_OWNER: ${{env.GIT_USER_OWNER}}
-        run: echo "$GIT_USER_NAME"
+        run: echo "$GIT_USER_OWNER"
