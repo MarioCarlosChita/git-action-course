@@ -12,4 +12,4 @@ jobs:
       - name: Run a shell script
         env:
           GIT_USER_NAME: Mario Carlos Chita
-        run: "$GIT_USER_NAME"
+        run: echo "$GIT_USER_NAME"
