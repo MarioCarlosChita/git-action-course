@@ -11,7 +11,7 @@ jobs:
     steps:
       - name:  Check repository 
         uses: actions/checkout@v4
-      - name: Run a shell script 
+      - name: Run a shell script with git user name 
         env:
           GIT_USER: $GIT_USER_OWNER
         run: echo "$GIT_USER"
