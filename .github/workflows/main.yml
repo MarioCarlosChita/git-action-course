@@ -13,5 +13,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Run a shell script 
         env:
-          GIT_USER: $GIT_USER_OWNER
+          GIT_USER: ${{vars.GIT_USER_OWNER }}
         run: echo "$GIT_USER"

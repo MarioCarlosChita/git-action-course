@@ -1,0 +1,16 @@
+name: Deploy my static site
+
+on:
+  push: 
+    branches: [develop]  
+  pull_request:
+     branches: [develop]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+       - name: Checkout Git Repository
+         uses: actions/checkout@v2
+       - name: Display Repository name
+         run: echo "Welcome to git action."
