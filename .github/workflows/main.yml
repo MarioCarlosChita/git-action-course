@@ -15,3 +15,4 @@ jobs:
         env:
           GIT_USER: ${{vars.GIT_USER_OWNER }}
         run: echo "$GIT_USER"
+        shell: bash
